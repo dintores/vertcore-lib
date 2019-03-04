@@ -43,9 +43,9 @@ vertcore.errors = require('./lib/errors');
 
 // main vertcoin library
 vertcore.Address = require('./lib/address');
-vertcore.Block = require('./lib/block');
-vertcore.MerkleBlock = require('./lib/block/merkleblock');
-vertcore.BlockHeader = require('./lib/block/blockheader');
+// vertcore.Block = require('./lib/block');
+// vertcore.MerkleBlock = require('./lib/block/merkleblock');
+// vertcore.BlockHeader = require('./lib/block/blockheader');
 vertcore.HDPrivateKey = require('./lib/hdprivatekey.js');
 vertcore.HDPublicKey = require('./lib/hdpublickey.js');
 vertcore.Networks = require('./lib/networks');
