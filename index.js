@@ -3,17 +3,17 @@
 var vertcore = module.exports;
 
 // module information
-vertcore.version = 'v' + require('./package.json').version;
-vertcore.versionGuard = function(version) {
-  if (version !== undefined) {
-    var message = 'More than one instance of vertcore-lib found. ' +
-      'Please make sure to require vertcore-lib and check that submodules do' +
-      ' not also include their own vertcore-lib dependency.';
-    throw new Error(message);
-  }
-};
-vertcore.versionGuard(global._vertcore);
-global._vertcore = vertcore.version;
+// vertcore.version = 'v' + require('./package.json').version;
+// vertcore.versionGuard = function(version) {
+//   if (version !== undefined) {
+//     var message = 'More than one instance of vertcore-lib found. ' +
+//       'Please make sure to require vertcore-lib and check that submodules do' +
+//       ' not also include their own vertcore-lib dependency.';
+//     throw new Error(message);
+//   }
+// };
+// vertcore.versionGuard(global._vertcore);
+// global._vertcore = vertcore.version;
 
 // crypto
 vertcore.crypto = {};
